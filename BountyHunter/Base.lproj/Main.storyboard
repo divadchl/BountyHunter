@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="BountyHunter" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jq2-5k-j8Y" customClass="CustomLabel" customModule="BountyHunter" customModuleProvider="target">
+                                <rect key="frame" x="20" y="20" width="242" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="242" id="fDN-gU-vO0"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PZa-v3-vOL" customClass="CustomLabel" customModule="BountyHunter" customModuleProvider="target">
+                                <rect key="frame" x="20" y="117" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="user" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Vyt-Ta-TG4" customClass="CustomTextField" customModule="BountyHunter" customModuleProvider="target">
+                                <rect key="frame" x="112" y="71" width="280" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="280" id="T6Y-HV-Sk2"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="p4B-Xc-yax" customClass="CustomTextField" customModule="BountyHunter" customModuleProvider="target">
+                                <rect key="frame" x="112" y="113" width="280" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KbT-Iw-wV4" customClass="CustomLabel" customModule="BountyHunter" customModuleProvider="target">
+                                <rect key="frame" x="20" y="71" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="jq2-5k-j8Y" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="1Ww-2R-Lar"/>
+                            <constraint firstItem="PZa-v3-vOL" firstAttribute="centerY" secondItem="p4B-Xc-yax" secondAttribute="centerY" id="4X3-hE-yGH"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="PZa-v3-vOL" secondAttribute="bottom" constant="462" id="D46-VC-Coj"/>
+                            <constraint firstItem="Vyt-Ta-TG4" firstAttribute="trailing" secondItem="p4B-Xc-yax" secondAttribute="trailing" id="Rid-Zt-OEa"/>
+                            <constraint firstItem="PZa-v3-vOL" firstAttribute="top" secondItem="KbT-Iw-wV4" secondAttribute="bottom" constant="25" id="Ru1-m4-z6X"/>
+                            <constraint firstItem="jq2-5k-j8Y" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="YfA-2E-P3A"/>
+                            <constraint firstItem="Vyt-Ta-TG4" firstAttribute="leading" secondItem="KbT-Iw-wV4" secondAttribute="trailing" constant="50" id="Zv3-GH-xPS"/>
+                            <constraint firstItem="KbT-Iw-wV4" firstAttribute="top" secondItem="jq2-5k-j8Y" secondAttribute="bottom" constant="30" id="bfX-rH-6Ye"/>
+                            <constraint firstItem="p4B-Xc-yax" firstAttribute="top" secondItem="Vyt-Ta-TG4" secondAttribute="bottom" constant="12" id="cp3-B2-xAD"/>
+                            <constraint firstItem="Vyt-Ta-TG4" firstAttribute="leading" secondItem="p4B-Xc-yax" secondAttribute="leading" id="eLR-ri-zLk"/>
+                            <constraint firstItem="KbT-Iw-wV4" firstAttribute="top" secondItem="Vyt-Ta-TG4" secondAttribute="top" id="ndk-P2-wrf"/>
+                            <constraint firstItem="KbT-Iw-wV4" firstAttribute="leading" secondItem="PZa-v3-vOL" secondAttribute="leading" id="qtW-5A-rMs"/>
+                            <constraint firstItem="jq2-5k-j8Y" firstAttribute="leading" secondItem="KbT-Iw-wV4" secondAttribute="leading" id="tmg-WK-l7o"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="708" y="458"/>
+        </scene>
+    </scenes>
+</document>

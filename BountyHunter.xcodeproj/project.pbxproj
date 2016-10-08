@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		50B230B51DA938E900861ECB /* FugitivosTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50B230B41DA938E900861ECB /* FugitivosTableViewController.swift */; };
+		50B230B81DA9453F00861ECB /* Fugitive+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50B230B61DA9453F00861ECB /* Fugitive+CoreDataProperties.swift */; };
+		50B230B91DA9453F00861ECB /* Fugitive.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50B230B71DA9453F00861ECB /* Fugitive.swift */; };
+		50B230BB1DA954A200861ECB /* CapturadosTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50B230BA1DA954A200861ECB /* CapturadosTableViewController.swift */; };
+		50B230BD1DA967E300861ECB /* NuevoFugitivo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50B230BC1DA967E300861ECB /* NuevoFugitivo.swift */; };
 		50B445591D9FFE8D0000D799 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50B445581D9FFE8D0000D799 /* AppDelegate.swift */; };
 		50B4455B1D9FFE8D0000D799 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50B4455A1D9FFE8D0000D799 /* ViewController.swift */; };
 		50B4455E1D9FFE8D0000D799 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 50B4455C1D9FFE8D0000D799 /* Main.storyboard */; };
@@ -24,6 +29,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		50B230B41DA938E900861ECB /* FugitivosTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FugitivosTableViewController.swift; sourceTree = "<group>"; };
+		50B230B61DA9453F00861ECB /* Fugitive+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Fugitive+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		50B230B71DA9453F00861ECB /* Fugitive.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Fugitive.swift; sourceTree = "<group>"; };
+		50B230BA1DA954A200861ECB /* CapturadosTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CapturadosTableViewController.swift; sourceTree = "<group>"; };
+		50B230BC1DA967E300861ECB /* NuevoFugitivo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NuevoFugitivo.swift; sourceTree = "<group>"; };
 		50B445551D9FFE8D0000D799 /* BountyHunter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BountyHunter.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		50B445581D9FFE8D0000D799 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		50B4455A1D9FFE8D0000D799 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -57,6 +67,8 @@
 		50B4454C1D9FFE8D0000D799 = {
 			isa = PBXGroup;
 			children = (
+				50B230B61DA9453F00861ECB /* Fugitive+CoreDataProperties.swift */,
+				50B230B71DA9453F00861ECB /* Fugitive.swift */,
 				50BA1C6C1DA0354B0005CCFB /* DBManager.swift */,
 				50B445791DA02BA90000D799 /* CoreData.framework */,
 				50B4456E1D9FFF8A0000D799 /* Fonts */,
@@ -76,17 +88,20 @@
 		50B445571D9FFE8D0000D799 /* BountyHunter */ = {
 			isa = PBXGroup;
 			children = (
+				50B445641D9FFE8D0000D799 /* Info.plist */,
 				50B445A11DA02F100000D799 /* BountyHunter.sqlite */,
-				50B4459E1DA02EF30000D799 /* BountyHunter.xcdatamodeld */,
-				50B445771DA016BB0000D799 /* CustomTextField.swift */,
+				50B445581D9FFE8D0000D799 /* AppDelegate.swift */,
+				50B230BA1DA954A200861ECB /* CapturadosTableViewController.swift */,
 				50B445711DA00B6A0000D799 /* Constantes.swift */,
 				50B4456F1DA002570000D799 /* CustomLabel.swift */,
-				50B445581D9FFE8D0000D799 /* AppDelegate.swift */,
+				50B445771DA016BB0000D799 /* CustomTextField.swift */,
+				50B230B41DA938E900861ECB /* FugitivosTableViewController.swift */,
 				50B4455A1D9FFE8D0000D799 /* ViewController.swift */,
-				50B4455C1D9FFE8D0000D799 /* Main.storyboard */,
 				50B4455F1D9FFE8D0000D799 /* Assets.xcassets */,
+				50B4459E1DA02EF30000D799 /* BountyHunter.xcdatamodeld */,
 				50B445611D9FFE8D0000D799 /* LaunchScreen.storyboard */,
-				50B445641D9FFE8D0000D799 /* Info.plist */,
+				50B4455C1D9FFE8D0000D799 /* Main.storyboard */,
+				50B230BC1DA967E300861ECB /* NuevoFugitivo.swift */,
 			);
 			path = BountyHunter;
 			sourceTree = "<group>";
@@ -178,6 +193,11 @@
 				50B445721DA00B6A0000D799 /* Constantes.swift in Sources */,
 				50B445A01DA02EF30000D799 /* BountyHunter.xcdatamodeld in Sources */,
 				50B445701DA002570000D799 /* CustomLabel.swift in Sources */,
+				50B230B91DA9453F00861ECB /* Fugitive.swift in Sources */,
+				50B230B51DA938E900861ECB /* FugitivosTableViewController.swift in Sources */,
+				50B230B81DA9453F00861ECB /* Fugitive+CoreDataProperties.swift in Sources */,
+				50B230BB1DA954A200861ECB /* CapturadosTableViewController.swift in Sources */,
+				50B230BD1DA967E300861ECB /* NuevoFugitivo.swift in Sources */,
 				50B445591D9FFE8D0000D799 /* AppDelegate.swift in Sources */,
 				50B445781DA016BB0000D799 /* CustomTextField.swift in Sources */,
 				50BA1C6D1DA0354B0005CCFB /* DBManager.swift in Sources */,

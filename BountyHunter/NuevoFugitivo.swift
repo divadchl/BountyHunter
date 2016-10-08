@@ -60,14 +60,17 @@ class NuevoFugitivo: UIViewController {
             strMensaje=""
             return
         }else{
-            let entityInfo = NSEntityDescription.entityForName("Fugitivo", inManagedObjectContext: DBManager.instance.managedObjectContext!)
+            let entityInfo = NSEntityDescription.entityForName("Fugitive", inManagedObjectContext: DBManager.instance.managedObjectContext!)
             let nuevoFugitivo = NSManagedObject.init(entity: entityInfo!, insertIntoManagedObjectContext: DBManager.instance.managedObjectContext!) as! Fugitive
             nuevoFugitivo.name = strNombre
             nuevoFugitivo.desc = strDelito
             nuevoFugitivo.bounty = NSDecimalNumber(string: strRecompensa)
+            nuevoFugitivo.captured = false
             
             do{
                 try DBManager.instance.managedObjectContext!.save()
+                navigationController?.popViewControllerAnimated(true)
+                
             }catch{
                 print("Error al salvar la BD... what's up?")
             }
